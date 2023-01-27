@@ -9,7 +9,7 @@ int RaiseToPower(int num, int power)
     int result = 1;
     for (int i = 0; i < power; i++)
     {
-        result*=num;
+        result *= num;
     }
     return result;
 }
