@@ -4,18 +4,18 @@
 [1,0,1,1,0,1,0,0]
 */
 
-int[] ArrayGeneration (int size,int min, int max)
+int[] ArrayGeneration(int size, int min, int max)
 {
-    int [] arr = new int [size];
-    Random rnd =new Random();
+    int[] arr = new int[size];
+    Random rnd = new Random();
     for (int i = 0; i < arr.Length; i++)
     {
-        arr[i]=rnd.Next(min,max+1);
+        arr[i] = rnd.Next(min, max + 1);
     }
     return arr;
 }
 
-void PrintArray (int [] arr)
+void PrintArray(int[] arr)
 {
     for (int i = 0; i < arr.Length; i++)
     {
@@ -23,5 +23,5 @@ void PrintArray (int [] arr)
     }
 }
 
-int [] array = ArrayGeneration(8,0,1);
+int[] array = ArrayGeneration(8, 0, 1);
 PrintArray(array);
