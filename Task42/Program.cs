@@ -18,6 +18,5 @@ int BinaryNumber(int num)
     }
     return res;
 }
-
 int result = BinaryNumber(number);
 Console.WriteLine(result);
