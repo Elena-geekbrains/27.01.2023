@@ -12,7 +12,7 @@ int[,] CreateMatrixRndItn(int rows, int colums)
     {
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            matrix[i, j] = i+j;
+            matrix[i, j] = i + j;
         }
     }
     return matrix;
@@ -25,12 +25,12 @@ void PrintMatrix(int[,] matrix)
         Console.Write("|");
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
-            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i,j], 4} | ");
-            else Console.Write($"{matrix[i,j], 4}");
+            if (j < matrix.GetLength(1) - 1) Console.Write($"{matrix[i, j],4} | ");
+            else Console.Write($"{matrix[i, j],4}");
         }
-       Console.WriteLine(" | ");
+        Console.WriteLine(" | ");
     }
 }
 
-int[,]array2D = CreateMatrixRndItn(3,4);
+int[,] array2D = CreateMatrixRndItn(3, 4);
 PrintMatrix(array2D);
