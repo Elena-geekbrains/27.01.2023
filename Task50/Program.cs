@@ -38,7 +38,7 @@ void PrintMatrix(int[,] matrix)
 
 bool FindMatrixElem(int[,] matrix, int rows, int colums)
 {
-    return rows-1 < matrix.GetLength(0) && colums-1 < matrix.GetLength(1);
+    return rows - 1 < matrix.GetLength(0) && colums - 1 < matrix.GetLength(1);
 }
 
 Console.WriteLine("Введите номер строки: ");
@@ -48,7 +48,7 @@ int columsNumber = Convert.ToInt32(Console.ReadLine());
 
 int[,] array2D = CreateMatrixRndItn(3, 4, 0, 10);
 PrintMatrix(array2D);
-bool result = FindMatrixElem(array2D,rowsNumber,columsNumber);
+bool result = FindMatrixElem(array2D, rowsNumber, columsNumber);
 
-Console.WriteLine(result ? $"Значение искомого элемента {array2D [rowsNumber-1,columsNumber-1]}" 
+Console.WriteLine(result ? $"Значение искомого элемента {array2D[rowsNumber - 1, columsNumber - 1]}"
                          : $"{rowsNumber},{columsNumber} -> такого элемента в массиве нет");
