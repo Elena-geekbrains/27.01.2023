@@ -51,6 +51,7 @@ int[] MinIndexElementsMatrix(int[,] matrix)
     return arrayIndexMin;
 }
 
+// Исключение строки и столбца на пересечении наименьшего эл-та
 int[,] MatrixWithoutMinElem(int[,] matrix, int[] minIndex)
 {
     int[,] matrixWithoutMinElem = new int[matrix.GetLength(0) - 1, matrix.GetLength(1) - 1];
